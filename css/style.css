@@ -1,0 +1,366 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f2a24; /* dark green background */
+    color: white;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    padding: 20px 40px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logowhite {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logowhite img {
+    width: 110px;
+    height: 15px;
+}
+
+/* Nav links */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+/* Buttons */
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-btn {
+    background: transparent;
+    border: 1px solid white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.download-btn {
+    background: white;
+    color: black;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* ================= HERO SECTION ================= */
+.hero {
+    padding: 60px 40px;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Left side */
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Button */
+.hero-btn {
+    background: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Right image */
+.hero-image img {
+    width: 400px;
+    border-radius: 20px;
+}
+/* ================= FEATURES SECTION ================= */
+.features {
+    background-color: #dfeee8; /* light green background */
+    padding: 60px 40px;
+    border-radius: 20px;
+    margin: 40px;
+    color: black;
+}
+
+.features-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Left text */
+.features-text {
+    max-width: 30%;
+}
+
+.features-text h4 {
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.features-text h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.learn-btn {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* Cards container */
+.features-cards {
+    display: flex;
+    gap: 20px;
+}
+
+/* Individual card */
+.card {
+    width: 200px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 13px;
+    line-height: 1.5;
+}
+/* ================= TESTIMONIAL ================= */
+.testimonial {
+    padding: 80px 40px;
+    text-align: center;
+    background-color: #0f2a24; /* same dark background */
+}
+
+.testimonial-text {
+    font-size: 22px;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+}
+
+.testimonial-author {
+    margin-bottom: 40px;
+    font-weight: normal;
+    color: #cfcfcf;
+}
+
+/* Logos row */
+.logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    opacity: 0.7;
+}
+/* Logo images */
+.logos img {
+    height: 20px;        /* controls size */
+    width: auto;         /* keeps proportions */
+    object-fit: contain; /* prevents stretching */
+    filter: brightness(0) invert(1); 
+    /* makes logos white for dark background (optional) */
+}
+
+.logos span {
+    font-size: 10px;
+}
+/* ================= EXPLORE SECTION ================= */
+.explore {
+    background-color: #dfeee8; /* light green */
+    margin: 40px;
+    padding: 60px 40px;
+    border-radius: 20px;
+    text-align: center;
+    color: black;
+}
+
+.explore h2 {
+    font-size: 28px;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+/* Image styling */
+.explore-image img {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 20px;
+}
+/* ================= SECOND TESTIMONIAL ================= */
+.testimonial-2 {
+    margin: 40px;
+    border-radius: 20px;
+    padding: 100px 40px;
+
+    /* Background image */
+    background-image: url("blurpic.png");
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    text-align: center;
+}
+
+/* Center content nicely */
+.testimonial-2-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Text styling */
+.testimonial-2 p {
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.testimonial-2 h4 {
+    font-weight: normal;
+    color: #e0e0e0;
+}
+/* ================= FOOTER ================= */
+.footer {
+    background-color: #0f2a24;
+    padding: 60px 40px;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Left section */
+.footer-left {
+    max-width: 300px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.footer-logo img {
+    width: 30px;
+}
+
+/* Links */
+.footer-links {
+    display: flex;
+    gap: 60px;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-links a {
+    display: block;
+    text-decoration: none;
+    color: #ccc;
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+/* Right section */
+.footer-right {
+    max-width: 300px;
+}
+
+.footer-right h4 {
+    margin-bottom: 10px;
+}
+
+/* Subscribe box */
+.subscribe-box {
+    display: flex;
+    margin: 15px 0;
+}
+
+.subscribe-box input {
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 20px 0 0 20px;
+    width: 60%;
+}
+
+.subscribe-box button {
+    padding: 8px 12px;
+    border: none;
+    background: white;
+    color: black;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+/* Social icons */
+.socials img {
+    width: 120px; /* adjust if needed */
+    margin-top: 10px;
+}
+.footer-left img{
+    width: auto;
+    height: 20px;
+}
