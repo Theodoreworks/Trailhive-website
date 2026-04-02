@@ -10,32 +10,33 @@
 </head>
 <body>
 
-    <!-- ================= NAVBAR ================= -->
-    <header class="navbar">
-        <div class="nav-container">
-            
-            <!-- Logo -->
-            <div class="logowhite">
-                <img src="css/logowhite.png" alt="logo">
-            </div>
-            <!-- Navigation Links -->
-            <nav>
-                <ul>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">About us</a></li>
-                </ul>
-            </nav>
+  <header class="navbar">
+    <div class="nav-container">
+        
+       <div class="logowhite">
+    <a href="index.html">
+        <img src="css/logowhite.png" alt="logo">
+    </a>
+</div>
 
-            <!-- Buttons -->
-            <div class="nav-buttons">
-                <button class="contact-btn">Contact us</button>
-                <button class="download-btn">Download the app</button>
-            </div>
+        <!-- Navigation Links -->
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
 
+        <!-- Buttons -->
+        <div class="nav-buttons">
+            <button class="contact-btn">Contact us</button>
+            <button class="download-btn">Download</button>
         </div>
-    </header>
+
+    </div>
+</header>
 
     <!-- ================= HERO SECTION ================= -->
     <section class="hero">
@@ -215,5 +216,19 @@
 
     </div>
 </footer>
+<script>
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+    });
+});
+
+document.querySelectorAll("section").forEach(section => {
+    section.classList.add("hidden");
+    observer.observe(section);
+});
+</script>
 </body>
 </html>

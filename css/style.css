@@ -4,6 +4,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Smooth transitions globally */
+* {
+    transition: all 0.3s ease;
+}
+nav a:hover {
+    color: #8fd3b6;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card img:hover {
+    transform: scale(1.05);
+}
 
 /* Body styling */
 body {
@@ -98,6 +111,7 @@ nav a {
     margin-bottom: 20px;
     line-height: 1.6;
 }
+
 
 /* Button */
 .hero-btn {
@@ -363,4 +377,141 @@ nav a {
 .footer-left img{
     width: auto;
     height: 20px;
+}
+/* ================= MOBILE ================= */
+@media (max-width: 900px) {
+
+    /* NAV */
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    nav {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #0f2a24;
+        width: 200px;
+        display: none;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-buttons {
+        display: none;
+    }
+
+    /* HERO */
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* FEATURES */
+    .features-container {
+        flex-direction: column;
+    }
+
+    .features-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .features-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* EXPLORE */
+    .explore h2 {
+        font-size: 22px;
+    }
+
+    /* FOOTER */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+}
+/* ================= PAGE ================= */
+.page {
+    padding: 100px 40px;
+    text-align: center;
+}
+
+.page h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+/* ================= PAGE ================= */
+.page2 {
+    padding: 100px 40px;
+    text-align: center;
+}
+
+.page2 h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+/* ================= PAGE ================= */
+.page3 {
+    padding: 100px 40px;
+    text-align: center;
+}
+
+.page3 h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+/* ================= PAGE ================= */
+.page4 {
+    padding: 100px 40px;
+    text-align: center;
+}
+
+.page4 h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+button {
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+/* Hidden state */
+.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+/* Show animation */
+.show {
+    opacity: 1;
+    transform: translateY(0);
 }
